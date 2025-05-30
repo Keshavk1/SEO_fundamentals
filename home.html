@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>SEO Fundamentals</title>
+</head>
+<body>
+
+  <div class="heading">
+    <h1>SEO Fundamentals</h1>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">SEO Basics</div>
+
+    <!-- Always visible -->
+    <ul class="nav-links main-links">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="about">About Us</a></li>
+      <li><a href="#" data-page="contact">Contact</a></li>
+      <li><a href="#" data-page="feedback">Feedback</a></li>
+    </ul>    
+    <!-- Hamburger button -->
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hidden until hamburger is clicked -->
+  <!-- Hidden until hamburger is clicked -->
+<ul class="nav-links extra-links" id="extra-links">
+  <li><a href="#intro">Intro</a></li>
+  <li><a href="#types">Types</a></li>
+  <li><a href="#tools">Tools</a></li>
+  <li><a href="#resources">Resources</a></li>
+</ul>
+  <div class="content" id="main-content">
+    <section id="intro">
+      <h2>Introduction to SEO</h2>
+      <p>Search Engine Optimization (SEO) is the process of improving your website so that it appears higher in search engine results (like Google). When done right, SEO brings more visitors to your website—organically, without paying for ads.</p>
+    
+      <h4>💡 Why SEO Matters:</h4>
+      <ul>
+        <li>Increases visibility on search engines</li>
+        <li>Brings in targeted, organic traffic</li>
+        <li>Builds credibility and trust</li>
+        <li>Improves user experience</li>
+      </ul>
+    
+      <p>Think of SEO as making your website speak the same language as search engines so they can recommend it to the right users.</p>
+    </section>    
+    <h4>💡 SEO in One Line:</h4>
+    <p>SEO = Speak Google's language so people can find you</p>
+
+    <h4>✅ Breakdown in 4 Easy Points:</h4>
+    <ol>
+      <li>Right Words ➡ Use keywords people search.</li>
+      <li>Fast Site ➡ Make your site load quickly.</li>
+      <li>Good content ➡ Answer questions clearly.</li>
+      <li>Trusted Links ➡ Get links from other Websites.</li>
+    </ol>
+
+    <h4>🧠 One-Liner to Remember:</h4>
+    <p>"If Google trusts you and users like you, you rank higher."</p>
+
+    <section id="types">
+      <h2>Types of SEO</h2>
+      <p>There are several types of SEO that work together to improve a site’s performance. Here's a quick breakdown:</p>
+    
+      <h4>1. On-Page SEO</h4>
+      <ul>
+        <li>Using proper keywords</li>
+        <li>Writing unique, helpful content</li>
+        <li>Optimizing meta tags and headings</li>
+      </ul>
+    
+      <h4>2. Off-Page SEO</h4>
+      <ul>
+        <li>Building backlinks (links from other websites)</li>
+        <li>Social media shares and mentions</li>
+        <li>Online reputation and brand authority</li>
+      </ul>
+    
+      <h4>3. Technical SEO</h4>
+      <ul>
+        <li>Improving website speed</li>
+        <li>Mobile-friendliness</li>
+        <li>Using HTTPS, sitemap, robots.txt</li>
+      </ul>
+    
+      <h4>4. Local SEO</h4>
+      <ul>
+        <li>Optimizing for “near me” searches</li>
+        <li>Creating a Google Business Profile</li>
+        <li>Getting local reviews and citations</li>
+      </ul>
+    </section>
+    
+    <section id="tools">
+      <h2>SEO Tools</h2>
+      <p>Here are some popular tools that help you monitor, analyze, and improve your SEO:</p>
+    
+      <ul>
+        <li><strong>Google Search Console</strong> – Track how your site appears on Google</li>
+        <li><strong>Google Analytics</strong> – Monitor website traffic and behavior</li>
+        <li><strong>Ahrefs</strong> – Keyword research, backlink analysis, and more</li>
+        <li><strong>SEMRush</strong> – Full-suite SEO tool for professionals</li>
+        <li><strong>Yoast SEO (WordPress)</strong> – On-page SEO optimization</li>
+        <li><strong>Lighthouse</strong> – Performance and SEO audit tool by Google</li>
+      </ul>
+    </section>
+    
+    <section id="resources">
+      <h2>SEO Resources</h2>
+      <p>Want to learn more? Here are some beginner-friendly SEO resources:</p>
+    
+      <ul>
+        <li><a href="https://moz.com/learn/seo" target="_blank">Moz Beginner's Guide to SEO</a></li>
+        <li><a href="https://developers.google.com/search/docs" target="_blank">Google Search Central</a></li>
+        <li><a href="https://ahrefs.com/blog/seo-basics/" target="_blank">Ahrefs SEO Basics</a></li>
+        <li><a href="https://backlinko.com/seo-this-year" target="_blank">Backlinko – SEO in 2025</a></li>
+      </ul>
+    
+      <p>Keep learning, keep experimenting, and remember—SEO is a long game with big rewards!</p>
+    </section>
+    
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const extraLinks  = document.getElementById("extra-links");
+    hamburger.addEventListener("click" , ()=>{
+      extraLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");  // for animation
+    });
+  </script>
+</body>
+</html>
